@@ -1,0 +1,87 @@
+$light_gray: hsl(0, 0%, 81%);
+$lght_grayish_blue: hsl(210, 46%, 95%);
+
+$moderate_violet: hsl(263, 55%, 52%);
+$very_dark_grayish_blue: hsl(217, 19%, 35%);
+$very_dark_blackish_vlue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$black:#000;
+
+$border-radius: 8px;
+
+/****************************name h2 text color *********************************/
+
+.text-black{
+    color:$black;
+    line-height: 15px;
+    opacity: 80%;
+}
+.text-white{
+    color:white;
+    line-height: 15px;
+    opacity: 90%;
+
+}
+
+/***************************name color and opacity *********************************/
+
+.name_white{
+    color:$white;
+    opacity: 70%;
+}
+.name_black{
+    opacity: 70%;
+}
+/********************************for Graduate header************************************/
+.graduate_white{
+    color:$lght_grayish_blue;
+    opacity: 50%;
+}
+.graduate_black{
+    opacity: 50%;
+}
+
+
+/******************************for main_card,image, header, paragraph ***********************/
+@mixin main(){
+.main_card{
+    padding:30px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 10px right 100px; 
+    background-size: 104px 92px;  
+    
+            .card{
+                display: flex;
+                align-items: center;
+                
+                img{
+                   height: 40px;
+                   width: 40px; 
+                   border-radius: 50%;
+                   margin-right: 10px;
+                    
+                }
+                .card1{
+                    line-height: 1;
+                }
+            }
+            
+        h2{
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            margin-top: 10px;
+           
+            
+        }
+        p{
+            line-height: 15px;
+            color: $white;
+            opacity: 80%;
+        }
+}
+}
+
+
+
+
