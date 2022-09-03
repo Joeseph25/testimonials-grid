@@ -6,7 +6,7 @@
 }
 
 .text-white {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   line-height: 15px;
   opacity: 90%;
 }
@@ -40,10 +40,11 @@
 }
 
 body {
-  min-height: 100v;
-  width: 100%;
+  min-height: 100vh;
+  max-width: 1110px;
   background-color: hsl(0deg, 0%, 81%);
   font-size: 13px;
+  font-family: "Barlow Semi Condensed";
   /********************************container**********************/
   /*******************************Jonathan*****************************/
   /**********************************Kira*********************************/
@@ -52,13 +53,14 @@ body {
   /**********************************Footer*****************************/
 }
 body .container {
-  margin: 10%;
+  position: absolute;
+  margin: 5% 10% 0% 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 1fr 20px 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: 1fr 20px 1fr 20px 0.2fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
   gap: 20px;
   border-radius: 10px;
 }
@@ -94,6 +96,22 @@ body .container > *:nth-child(8) {
   -ms-grid-row: 3;
   -ms-grid-column: 7;
 }
+body .container > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+body .container > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+body .container > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+body .container > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
 body .container .daniel {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -107,8 +125,8 @@ body .container .daniel .main_card {
   padding: 30px;
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top 10px right 100px;
-  background-size: 104px 92px;
+  background-position: top 0px right 100px;
+  background-size: 98px 104px;
 }
 body .container .daniel .main_card .card {
   display: -webkit-box;
@@ -125,17 +143,23 @@ body .container .daniel .main_card .card img {
   margin-right: 10px;
 }
 body .container .daniel .main_card .card .card1 {
-  line-height: 1;
+  line-height: 1.1;
 }
 body .container .daniel .main_card h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
   margin-top: 10px;
+  line-height: 20px;
 }
-body .container .daniel .main_card p {
-  line-height: 15px;
+body .container .daniel .main_card blockquote {
   color: hsl(0deg, 0%, 100%);
-  opacity: 80%;
+  opacity: 70%;
+  line-height: 17px;
+}
+body .container .daniel .main_card .blockqt_black {
+  color: #000;
+  line-height: 17px;
+  opacity: 70%;
 }
 body .jonathan {
   -ms-grid-column: 3;
@@ -148,8 +172,8 @@ body .jonathan .main_card {
   padding: 30px;
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top 10px right 100px;
-  background-size: 104px 92px;
+  background-position: top 0px right 100px;
+  background-size: 98px 104px;
 }
 body .jonathan .main_card .card {
   display: -webkit-box;
@@ -166,17 +190,23 @@ body .jonathan .main_card .card img {
   margin-right: 10px;
 }
 body .jonathan .main_card .card .card1 {
-  line-height: 1;
+  line-height: 1.1;
 }
 body .jonathan .main_card h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
   margin-top: 10px;
+  line-height: 20px;
 }
-body .jonathan .main_card p {
-  line-height: 15px;
+body .jonathan .main_card blockquote {
   color: hsl(0deg, 0%, 100%);
-  opacity: 80%;
+  opacity: 70%;
+  line-height: 17px;
+}
+body .jonathan .main_card .blockqt_black {
+  color: #000;
+  line-height: 17px;
+  opacity: 70%;
 }
 body .jonathan .main_card {
   background-image: none;
@@ -195,8 +225,8 @@ body .kira .main_card {
   padding: 30px;
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top 10px right 100px;
-  background-size: 104px 92px;
+  background-position: top 0px right 100px;
+  background-size: 98px 104px;
 }
 body .kira .main_card .card {
   display: -webkit-box;
@@ -213,23 +243,26 @@ body .kira .main_card .card img {
   margin-right: 10px;
 }
 body .kira .main_card .card .card1 {
-  line-height: 1;
+  line-height: 1.1;
 }
 body .kira .main_card h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
   margin-top: 10px;
+  line-height: 20px;
 }
-body .kira .main_card p {
-  line-height: 15px;
+body .kira .main_card blockquote {
   color: hsl(0deg, 0%, 100%);
-  opacity: 80%;
+  opacity: 70%;
+  line-height: 17px;
+}
+body .kira .main_card .blockqt_black {
+  color: #000;
+  line-height: 17px;
+  opacity: 70%;
 }
 body .kira .main_card {
   background-image: none;
-}
-body .kira .main_card p {
-  color: #000;
 }
 body .patrick {
   -ms-grid-column: 2;
@@ -245,8 +278,8 @@ body .patrick .main_card {
   padding: 30px;
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top 10px right 100px;
-  background-size: 104px 92px;
+  background-position: top 0px right 100px;
+  background-size: 98px 104px;
 }
 body .patrick .main_card .card {
   display: -webkit-box;
@@ -263,17 +296,23 @@ body .patrick .main_card .card img {
   margin-right: 10px;
 }
 body .patrick .main_card .card .card1 {
-  line-height: 1;
+  line-height: 1.1;
 }
 body .patrick .main_card h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
   margin-top: 10px;
+  line-height: 20px;
 }
-body .patrick .main_card p {
-  line-height: 15px;
+body .patrick .main_card blockquote {
   color: hsl(0deg, 0%, 100%);
-  opacity: 80%;
+  opacity: 70%;
+  line-height: 17px;
+}
+body .patrick .main_card .blockqt_black {
+  color: #000;
+  line-height: 17px;
+  opacity: 70%;
 }
 body .patrick .main_card {
   background-image: none;
@@ -289,8 +328,8 @@ body .jeanette .main_card {
   padding: 30px;
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top 10px right 100px;
-  background-size: 104px 92px;
+  background-position: top 0px right 100px;
+  background-size: 98px 104px;
 }
 body .jeanette .main_card .card {
   display: -webkit-box;
@@ -307,23 +346,26 @@ body .jeanette .main_card .card img {
   margin-right: 10px;
 }
 body .jeanette .main_card .card .card1 {
-  line-height: 1;
+  line-height: 1.1;
 }
 body .jeanette .main_card h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
   margin-top: 10px;
+  line-height: 20px;
 }
-body .jeanette .main_card p {
-  line-height: 15px;
+body .jeanette .main_card blockquote {
   color: hsl(0deg, 0%, 100%);
-  opacity: 80%;
+  opacity: 70%;
+  line-height: 17px;
+}
+body .jeanette .main_card .blockqt_black {
+  color: #000;
+  line-height: 17px;
+  opacity: 70%;
 }
 body .jeanette .main_card {
   background-image: none;
-}
-body .jeanette .main_card p {
-  color: #000;
 }
 body .attribution {
   -ms-grid-column: 2;
@@ -358,8 +400,8 @@ body .attribution {
     grid-row: 1/2;
   }
   body .container .daniel .main_card {
-    background-position: top 5px right 10%;
-    background-size: 80px 80px;
+    background-position: top 0px right 10%;
+    background-size: 90px 104px;
   }
   body .container .jonathan {
     -ms-grid-column: 1;

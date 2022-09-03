@@ -17,7 +17,7 @@ $border-radius: 8px;
     opacity: 80%;
 }
 .text-white{
-    color:white;
+    color:$white;
     line-height: 15px;
     opacity: 90%;
 
@@ -48,8 +48,8 @@ $border-radius: 8px;
     padding:30px;
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    background-position: top 10px right 100px; 
-    background-size: 104px 92px;  
+    background-position: top 0px right 100px; 
+    background-size: 98px 104px;  
     
             .card{
                 display: flex;
@@ -63,7 +63,7 @@ $border-radius: 8px;
                     
                 }
                 .card1{
-                    line-height: 1;
+                    line-height: 1.1;
                 }
             }
             
@@ -71,13 +71,20 @@ $border-radius: 8px;
             font-size: 1.2em;
             margin-bottom: 10px;
             margin-top: 10px;
+            line-height: 20px;
            
             
         }
-        p{
-            line-height: 15px;
-            color: $white;
-            opacity: 80%;
+      
+        blockquote{
+            color:$white;
+            opacity:70%;
+            line-height: 17px;
+        }
+        .blockqt_black{
+            color:$black;
+            line-height: 17px;
+            opacity: 70%;
         }
 }
 }
